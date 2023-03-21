@@ -12,9 +12,14 @@ return result
 
 function ternaryCheckCity(city){
   // Write your code here!
-  return (city ? NYC : !NYC);
+  const cityMessage = city = NYC ?
+    "Ok, sounds good." : "No go.";
+console.log(cityMessage(true));
+console.log(cityMessage(false));
 }
-console.log(ternaryCheckCity(true));
+
+
+
 
 
 function switchOnCharmFromTip(){
