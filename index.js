@@ -18,16 +18,27 @@ return result
 
 function ternaryCheckCity(city){
   // Write your code here!
-  const cityMessage = city
-    NYC ? "Ok, sounds good." : "No go.";
-console.log(cityMessage(true));
-console.log(cityMessage(false));
+  let answer 
+if (city === "NYC") {
+  return ("Ok, sounds good.");
+}
+else if (city != "NYC") {
+  return ("No go.");
+}
+return answer
 }
 
-
-
-
-
-function switchOnCharmFromTip(){
+function switchOnCharmFromTip(tip){
   // Write your code here!
+  let tipAnswer
+  if (tip === "generous") {
+    return ("Thank you so much.");
+  }
+  else if (tip === "not as generous") {
+    return ("Thank you.");
+  }
+  else if (tip === "thanks for everything") {
+    return ("Bye.");
+  }
+  return tipAnswer
 }
